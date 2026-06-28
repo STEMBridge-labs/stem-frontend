@@ -107,8 +107,8 @@
 }
 
 .infoRow {
-    display: flex;
-    justify-content: space-between;
+    /* display: flex; */
+    /* justify-content: space-between; */
     margin: 0 101.5px;
     background-color: #2563EB;
     padding: 25px 30px;
@@ -147,4 +147,61 @@
 .infoCardSmallText {
     font-size: 20px;
     color: #FFFFFF99;
+}
+
+.footerContainer {
+    margin: 0 101.5px;
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+    padding: 80px 70.5px;
+}
+
+.stemContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.stemImgContainer {
+    max-width: 100px;
+    /* height: 100px; */
+}
+
+.stemImg {
+    width: 100%;
+    height: 100%;
+}
+
+.stemText {
+    font-family: Roboto;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 100%;
+    color: #2563EB;
+}
+
+.linkContainer {
+    display: flex;
+    justify-content: space-between;
+}
+
+.linkText {
+    font-family: Roboto;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 100%;
+    color: #585858;
+}
+
+.copyRight {
+     display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: Roboto;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 100%;
+    color: #585858;
 }

@@ -2,7 +2,8 @@
 import style from "./style.module.css";
 import Image from "next/image";
 import stem from "../../public/stem.svg";
-import file from "../../public/file.svg";
+import smallStem from "../../public/stem-small.svg";
+import Link from "next/link";
 
 export const HomePage = () => {
 
@@ -19,6 +20,25 @@ export const HomePage = () => {
             bigText: "FREE",
             smallText: "FOR STUDENTS"
         }
+    ];
+
+    const links = [
+        {
+            text: "Privacy Policy",
+            href: "/privacy-policy"
+        },
+        {
+            text: "Contact Us",
+            href: "/contact"
+        },
+        {
+            text: "Modules",
+            href: "/about"
+        },
+        {
+            text: "Partners",
+            href: "/about"
+        },
     ];
 
     return (
@@ -55,7 +75,7 @@ export const HomePage = () => {
 
             <div className={style.infoRow}>
 
-                {infoTexts.map((infoText, index) => (
+                {infoTexts.map((infoText) => (
                     <div className={style.infoCard}>
 
                         <div className={style.infoCardBigText}>{infoText.bigText}</div>
@@ -64,6 +84,40 @@ export const HomePage = () => {
                     </div>
                 ))}
 
+
+            </div>
+
+            <div className={style.footerContainer}>
+
+                <div className={style.stemContainer}>
+
+                    <div className={style.stemImgContainer}>
+
+                        <div className={style.stemImg}>
+                            <Image src={smallStem} alt="STEMBridge" />
+                        </div>
+
+                    </div>
+
+                    <div className={style.stemText}>
+                        STEMBridge
+                    </div>
+
+                </div>
+
+                <div className={style.linkContainer}>
+                    {links.map(link => (
+
+                        <Link className={style.linkText} href={link.href}>
+                            {link.text}
+                        </Link>
+
+                    ))}
+                </div>
+
+                <div className={style.copyRight}>
+                    2026 STEMBridge. All Rights Reserved
+                </div>
 
             </div>
 
