@@ -1,9 +1,10 @@
-import { HomePage } from "@/Widget/Home";
+"use client";
+import { LandingPage } from "@/Widget/Landing";
 
 export default function Home() {
   return (
     <main>
-      <HomePage />
+      <LandingPage />
     </main>
   );
 }
