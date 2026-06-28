@@ -1,0 +1,48 @@
+.container {
+    max-width: 1440px;
+    margin: 0 auto;
+    padding: 0 20px;
+    border: solid 2px red;
+}
+
+.learnRow {
+    display: flex;
+    justify-content: space-between;
+    margin: 0 101.5px;
+}
+
+.leftHandSide {
+    max-width: 576px;
+    height: 468px;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.learnText {
+    font-family: Roboto;
+    font-weight: 700;
+    font-size: 64px;
+    line-height: 100%;
+    margin: 108px 0 0 0;
+}
+
+.blue {
+    color: #2563EB;
+}
+
+.imageContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 694px;
+    height: 694px;
+    /* width: 100%; */
+    /* height: 100%; */
+}
+
+.image {
+    width: 100%;
+    height: 100%;
+    /* object-fit: contain; */
+}
