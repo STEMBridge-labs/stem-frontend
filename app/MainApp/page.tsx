@@ -9,7 +9,7 @@ export default function HomePage() {
   const router = useRouter()
 
   useEffect(() => {
-    router.replace(Route.Landing) 
+    router.replace(Route.HOME) 
   }, [router])
 
   return <Loader size="md" fullScreen={true} />

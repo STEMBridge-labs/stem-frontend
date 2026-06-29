@@ -4,8 +4,12 @@ import Image from "next/image";
 import stem from "../../public/stem.svg";
 import smallStem from "../../public/stem-small.svg";
 import Link from "next/link";
+import { useRouter } from "next/navigation";
+import { Route } from "@/lib/route";
 
 export const LandingPage = () => {
+
+    const  router = useRouter();
 
     const infoTexts = [
         {
@@ -55,7 +59,7 @@ export const LandingPage = () => {
                     </div>
 
                     <div className={style.btnContainer}>
-                        <button className={style.getStartedBtn}>Get Started</button>
+                        <button onClick={() => router.push(Route.MainApp)} className={style.getStartedBtn}>Get Started</button>
                         <button className={style.alreadyBtn}>I already have an account</button>
                     </div>
 

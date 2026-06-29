@@ -1,7 +1,12 @@
 "use client";
+import { useRouter } from 'next/navigation';
 import style from './style.module.css';
+import { Route } from '@/lib/route';
 
 export const DashboardNavBar = () => {
+
+    const router = useRouter();
+
     return (
         <div className={style.container}>
 
@@ -11,8 +16,8 @@ export const DashboardNavBar = () => {
 
             <div className={style.btnContainer}>
 
-                <button className={style.logInBtn}>Log In</button>
-                <button className={style.getStartedBtn}>Get Started</button>
+                <button onClick={() => router.push(Route.Login)} className={style.logInBtn}>Log In</button>
+                <button onClick={() => router.push(Route.MainApp)} className={style.getStartedBtn}>Get Started</button>
 
             </div>
 
