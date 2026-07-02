@@ -3,7 +3,7 @@ export const Route = {
     Landing: "/LandingPage",
     MainApp: "/MainApp",
     Login: "/Login",
-    Learn:"/MainApp/LearnPage",
-    MathSolver:"/MainApp/MathSolverPage",
-    Badges:"/MainApp/BadgesPage",
+    Learn: "/MainApp/LearnPage",
+    MathSolver: "/MainApp/MathSolverPage",
+    Badges: "/MainApp/BadgePage",
 }

@@ -1,4 +1,5 @@
-"use client"
+"use client";
+
 import { usePathname, useRouter } from 'next/navigation'
 import { ProfileImage } from '../ProfileImage'
 import style from './style.module.css'
@@ -35,7 +36,7 @@ export const NavBar = () => {
             <div className={style.navBtnContainer}>
 
                 {links.map((link) =>
-                    <button onClick={()=>router.push(link.route)} className={pathName===link.route?style.navBtnActive:style.navBtn}>
+                    <button onClick={() => router.push(link.route)} className={pathName === link.route ? style.navBtnActive : style.navBtn}>
                         {link.title}
                     </button>
                 )
