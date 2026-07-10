@@ -6,11 +6,12 @@ import Image from "next/image";
 import star from "../../public/Star.svg";
 import { useRouter } from "next/navigation";
 import { Route } from "@/lib/route";
+import { ProgressBar } from "@/components/ui/Progress";
 
 export const Home = () => {
   const router = useRouter();
 
-  const progression = 70;
+  const progression = 60;
 
   return (
     <div className={style.container}>
@@ -40,12 +41,7 @@ export const Home = () => {
             <div className={style.level}>Level 4 - 5 (1000 XP)</div>
           </div>
 
-          <div className={style.progressBar}>
-            <div
-              className={style.progressBarFill}
-              style={{ width: `${progression}%` }}
-            ></div>
-          </div>
+          <ProgressBar progression={progression} />
         </div>
 
         <div className={style.profileBottom}>
