@@ -7,11 +7,47 @@ import star from "../../public/Star.svg";
 import { useRouter } from "next/navigation";
 import { Route } from "@/lib/route";
 import { ProgressBar } from "@/components/ui/Progress";
+import { LearningTag } from "@/components/ui/LearningTag";
+import set from "../../public/set-square.svg";
+import geo from "../../public/geometry.svg";
+import frac from "../../public/fraction.svg";
+
+enum Status {
+  AlmostDone = "Almost Done",
+  InProgress = "In Progress",
+}
 
 export const Home = () => {
   const router = useRouter();
 
   const progression = 60;
+
+  const learningTags = [
+    {
+      title: "Set Theory",
+      percentage: "70",
+      status: Status.AlmostDone,
+      image: set,
+    },
+    {
+      title: "Geometry",
+      percentage: "60",
+      status: Status.InProgress,
+      image: geo,
+    },
+    {
+      title: "Fractions",
+      percentage: "50",
+      status: Status.AlmostDone,
+      image: set,
+    },
+    {
+      title: "Geometry",
+      percentage: "30",
+      status: Status.InProgress,
+      image: geo,
+    },
+  ];
 
   return (
     <div className={style.container}>
@@ -78,6 +114,20 @@ export const Home = () => {
             </div>
           </div>
         </div>
+      </div>
+
+      <div className={style.contLearnText}>CONTINUE LEARNING</div>
+
+      <div className={style.learnTagContainer}>
+        {learningTags.map((tag, index) => (
+          <LearningTag
+            key={index}
+            image={tag.image}
+            title={tag.title}
+            percentage={tag.percentage}
+            status={tag.status}
+          />
+        ))}
       </div>
     </div>
   );

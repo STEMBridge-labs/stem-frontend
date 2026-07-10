@@ -1,0 +1,48 @@
+.container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    border-radius: 20px;
+    font-family: Roboto, sans-serif;
+    line-height: 100%;
+    padding: 20px;
+    /*border: 2px orangered solid;*/
+}
+
+.imageContainer {
+    max-width: 200px;
+}
+
+.img {
+    width: 100%;
+    height: auto;
+}
+
+.infoContainer {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    margin: 0px 10px;
+}
+
+.title {
+    font-weight: 700;
+    font-size: 36px;
+}
+
+.percentage {
+    font-weight: 400;
+    font-size: 20px;
+}
+
+.statusTag {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 4px 10px;
+    border-radius: 10px;
+    max-width: max-content;
+    width: 100%;
+}

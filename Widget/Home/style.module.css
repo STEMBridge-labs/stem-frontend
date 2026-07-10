@@ -2,6 +2,9 @@
     max-width: 1260px;
     width: 100%;
     margin: 200px auto;
+    display: flex;
+    flex-direction: column;
+    gap: 70px;
 }
 
 .profileCard {
@@ -40,7 +43,8 @@
 .statXp,
 .reachLevelText,
 .reachLevelNumber,
-.statBodyRight {
+.statBodyRight,
+.contLearnText {
     font-family: Roboto, sans-serif;
     font-weight: 600;
     /*font-size: 36px;*/
@@ -175,4 +179,17 @@
 .statBodyRight:nth-child(3) {
     font-size: 12px;
     font-weight: 400;
+}
+
+.contLearnText {
+    letter-spacing: 40%;
+    color: #3b3b3b;
+}
+
+.learnTagContainer {
+    /*max-width: 1260px;*/
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    /*border: 2px #2aff00 solid;*/
 }
