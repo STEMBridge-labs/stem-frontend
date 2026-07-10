@@ -1,0 +1,191 @@
+.container {
+    max-width: 1260px;
+    width: 100%;
+    margin: 200px auto;
+}
+
+.profileCard {
+    background-color: #5a0062;
+    width: 100%;
+    padding: 50px 48px;
+    border-radius: 60px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.profileTop {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.profileRow {
+    display: flex;
+    justify-content: space-between;
+}
+
+.leftProfile {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    gap: 10px;
+}
+
+.hello,
+.classSubject,
+.xpScore,
+.level,
+.challengesText,
+.statXp,
+.reachLevelText,
+.reachLevelNumber,
+.statBodyRight {
+    font-family: Roboto, sans-serif;
+    font-weight: 600;
+    /*font-size: 36px;*/
+    line-height: 100%;
+    color: #f8fafc;
+}
+
+.hello {
+    font-size: 48px;
+}
+
+.classSubject {
+    font-size: 24px;
+    font-weight: 400;
+}
+
+.rightProfile {
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+    gap: 10px;
+}
+
+.initalsContainer {
+    width: 108px;
+    height: 108px;
+}
+
+.levelXp {
+    display: flex;
+    justify-content: space-between;
+}
+
+.xpContainer {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.xpScore {
+    font-size: 24px;
+}
+
+.level {
+    font-size: 24px;
+}
+
+.progressBar {
+    width: 100%;
+    height: 14px;
+    background-color: #d9d9d980;
+    border-radius: 20px;
+}
+
+.progressBarFill {
+    height: 100%;
+    background-color: #f59e0b;
+    border-radius: 20px;
+}
+
+.profileBottom {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.statCard {
+    width: 100%;
+    padding: 30px;
+    background-color: #f8fafc4d;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.statLeftTitle {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    /*border: 2px solid red;*/
+}
+
+.challengesText {
+    font-size: 24px;
+}
+
+.challengesButton {
+    font-size: 11px;
+    color: #2aff00;
+    cursor: pointer;
+}
+
+.statBody {
+    width: 100%;
+    padding: 10px;
+    /*background-color: #f8fafc4d;*/
+    border-radius: 11px;
+    border: 2px solid #ffffff66;
+}
+
+.statXp {
+    color: #2bff00;
+    font-size: 40px;
+    font-weight: 700;
+}
+
+.reachLevelContainer {
+    display: flex;
+    justify-content: space-between;
+    align-items: end;
+}
+
+.reachLevelText {
+    color: #f8fafc;
+    font-size: 24px;
+    font-weight: 400;
+}
+
+.reachLevelNumber {
+    color: #ffffff66;
+    font-size: 32px;
+    font-weight: 700;
+}
+
+.statRightTitle {
+    font-size: 40px;
+    color: #ffe100;
+    font-weight: 700;
+}
+
+.statBodyRight {
+    color: #f8fafc;
+}
+
+.statBodyRight:nth-child(1) {
+    font-size: 20px;
+}
+
+.statBodyRight:nth-child(2) {
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.statBodyRight:nth-child(3) {
+    font-size: 12px;
+    font-weight: 400;
+}

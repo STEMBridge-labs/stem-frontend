@@ -10,16 +10,16 @@
     top: 0;
     left: 0;
     z-index: 1000;
-    background-color: #F8FAFC;
+    background-color: #f8fafc;
 }
 
 .text {
-    font-family: Roboto;
+    font-family: Roboto, sans-serif;
     font-weight: 700;
     font-size: 36px;
     line-height: 100%;
     margin: 10px;
-    color: #2563EB;
+    color: #2563eb;
     /* border: solid 2px red; */
 }
 
@@ -34,7 +34,7 @@
 
 .getStartedBtn,
 .logInBtn {
-    font-family: Roboto;
+    font-family: Roboto, sans-serif;
     font-weight: 700;
     font-size: 20px;
     line-height: 100%;
@@ -49,37 +49,36 @@
 }
 
 .logInBtn {
-    color: #0F172A;
-    border: solid 2px #B3B3B3;
+    color: #0f172a;
+    border: solid 2px #b3b3b3;
 }
 
 .getStartedBtn {
-    color: #F8FAFC;
-    background-color: #2563EB;
+    color: #f8fafc;
+    background-color: #2563eb;
 }
 
 .burgerContainer {
     display: none;
 }
 
-@media (max-width:1440px) {
+@media (max-width: 1440px) {
     .container {
         padding: 17px 20px;
     }
 }
 
-@media (max-width:930px) {
+@media (max-width: 930px) {
     .btnContainer {
         display: none;
     }
 
     .burgerContainer {
         display: block;
-         padding: 10px 29px;
+        padding: 10px 29px;
     }
 
     .text {
         font-size: 24px;
     }
-
 }
