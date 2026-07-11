@@ -3,7 +3,6 @@ import LearnQuiz from "@/Widget/Quiz";
 
 export default async function Page({ params }: { params: Promise<{ topic: string }> }) {
   const { topic } = await params;
-  console.log(topic)
 
   return <LearnQuiz topic={topic} />;
 }

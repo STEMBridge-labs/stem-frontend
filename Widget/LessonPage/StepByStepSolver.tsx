@@ -52,4 +52,3 @@ export default function StepByStepSolver({
 
 
 
-//  <div className="absolute inset-x-6 bottom-0 h-[3px] rounded-full bg-amber-400" />
