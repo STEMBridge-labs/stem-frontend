@@ -27,7 +27,7 @@ export const DashboardNavBar = () => {
 
                 <Image src={burger} alt='burger'/>
 
-            </div>
+            </div> 
 
         </div>
     );
