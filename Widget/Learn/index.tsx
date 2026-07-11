@@ -14,7 +14,7 @@ const topics = [
 // This component renders the learn page and links each topic to its lesson route.
 export const Learn = () => {
   return (
-    <div className="my-30 flex flex-col p-6 px-8">
+    <div className="my-34 flex flex-col p-6 px-8">
       <h1 className="mb-7 text-4xl font-bold text-[var(--foreground)]">Topics</h1>
 
       <div className="grid min-w-sm grid-cols-1 gap-9 text-4xl font-bold md:grid-cols-2 lg:grid-cols-3">
