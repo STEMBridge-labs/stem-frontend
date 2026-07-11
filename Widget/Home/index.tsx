@@ -10,7 +10,7 @@ import { ProgressBar } from "@/components/ui/Progress";
 import { LearningTag } from "@/components/ui/LearningTag";
 import set from "../../public/set-square.svg";
 import geo from "../../public/geometry.svg";
-import frac from "../../public/fraction.svg";
+// import frac from "../../public/fraction.svg";
 
 enum Status {
   AlmostDone = "Almost Done",

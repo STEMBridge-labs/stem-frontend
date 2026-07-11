@@ -7,6 +7,6 @@ const MainAppLayout = ({ children }: { children: React.ReactNode }) => {
       {children}
     </main>
   );
-}
+};
 
 export default MainAppLayout;
