@@ -7,6 +7,7 @@ import Link from "next/link";
 import { useRouter } from "next/navigation";
 import { Route } from "@/lib/route";
 
+// This component renders the public landing experience before the user enters the app.
 export const LandingPage = () => {
 
     const  router = useRouter();

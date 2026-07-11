@@ -1,13 +1,5 @@
-import Login from "@/app/(auth)/Login/page";
-
+// Central navigation map for the app so pages can be linked consistently.
 export const Route = {
-<<<<<<< Updated upstream
-    HOME: "/MainApp/HomePage",
-    Landing: "/LandingPage",
-    MainApp: "/MainApp",
-    Login: "/Login",
-}
-=======
   HOME: "/MainApp/HomePage",
   Landing: "/LandingPage",
   MainApp: "/MainApp",
@@ -18,4 +10,3 @@ export const Route = {
   Lesson: (topic: string) => `/MainApp/Lessons/${topic}`,
   Quiz: (topic: string) => `/MainApp/Quiz/${topic}`,
 };
->>>>>>> Stashed changes

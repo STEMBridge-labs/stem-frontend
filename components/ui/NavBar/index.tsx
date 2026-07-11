@@ -1,9 +1,6 @@
-<<<<<<< Updated upstream
-=======
 "use client";
 
 import { usePathname, useRouter } from "next/navigation";
-import { ProfileImage } from "../ProfileImage";
 import style from "./style.module.css";
 import { Route } from "@/lib/route";
 import {
@@ -13,10 +10,12 @@ import {
   AiOutlineTrophy,
 } from "react-icons/ai";
 
+// This navbar provides the main app navigation for desktop and mobile layouts.
 export const NavBar = () => {
   const router = useRouter();
   const pathName = usePathname();
 
+  // These links define the main app sections the user can switch between.
   const links = [
     {
       title: "Home",
@@ -42,7 +41,7 @@ export const NavBar = () => {
 
   return (
     <>
-      {/* Desktop */}
+      {/* Desktop navigation bar */}
       <div className={style.container}>
         <div className={style.stemText}>STEMBridge</div>
 
@@ -51,9 +50,7 @@ export const NavBar = () => {
             <button
               key={link.route}
               onClick={() => router.push(link.route)}
-              className={
-                pathName === link.route ? style.navBtnActive : style.navBtn
-              }
+              className={pathName === link.route ? style.navBtnActive : style.navBtn}
             >
               {link.title}
             </button>
@@ -61,15 +58,14 @@ export const NavBar = () => {
         </div>
 
         <div className={style.profileContainer}>
-          <ProfileImage src="" alt="Profile Image" firstName="John" />
+          {/* Profile section placeholder */}
         </div>
       </div>
 
-      {/* Mobile */}
-      <div className="flex md:hidden fixed bottom-0 w-full items-center justify-center gap-15 rounded-2xl border border-[var(--border)] bg-[var(--card)] px-5 py-3">
-        {links.map((link, index) => {
+      {/* Mobile navigation bar */}
+      <div className="fixed bottom-0 flex w-full items-center justify-center gap-15 rounded-2xl border border-[var(--border)] bg-[var(--card)] px-5 py-3 md:hidden">
+        {links.map((link) => {
           const isActive = pathName === link.route;
-          const isLast = index === links.length - 1;
           const { Icon } = link;
 
           return (
@@ -93,4 +89,3 @@ export const NavBar = () => {
     </>
   );
 };
->>>>>>> Stashed changes
