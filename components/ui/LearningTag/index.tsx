@@ -34,7 +34,10 @@ export const LearningTag = ({
       </div>
       <div className={style.infoContainer}>
         <div className={style.title}>{title}</div>
-        <ProgressBar progression={parseInt(percentage)} />
+        <ProgressBar
+          progression={parseInt(percentage)}
+          progressColor="#2563EB"
+        />
         <div className={style.percentage}>{percentage}% completed</div>
       </div>
       <div
